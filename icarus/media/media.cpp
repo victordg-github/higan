@@ -1,6 +1,6 @@
 auto Media::construct() -> void {
   database = BML::unserialize(file::read(locate({"Database/", name(), ".bml"})));
-  pathname = {Path::user(), "Emulation/", name(), "/"};
+  pathname = {Path::user(), "higan/", name(), "/Cartridge/"};
 }
 
 auto Media::read(string location, string suffix) -> vector<uint8_t> {
